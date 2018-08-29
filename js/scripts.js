@@ -32,16 +32,16 @@ jQuery(document).ready(function($) {
 
       $('#slider ul li:last-child').prependTo('#slider ul');
 
-      /*          function moveLeft() {
-                    $('#slider ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider ul li:last-child').prependTo('#slider ul');
-                        $('#slider ul').css('left', '');
-                    });
-                };
+      function moveLeft() {
+        $('#slider ul').animate({
+          left: +slideWidth
+        }, 200, function() {
+          $('#slider ul li:last-child').prependTo('#slider ul');
+          $('#slider ul').css('left', '');
+        });
+      };
 
-                function moveRight() {
+      /*          function moveRight() {
                     $('#slider ul').animate({
                         left: - slideWidth
                     }, 200, function () {
